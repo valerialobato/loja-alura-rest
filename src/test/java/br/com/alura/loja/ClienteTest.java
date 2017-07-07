@@ -11,10 +11,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.alura.loja.modelo.Projeto;
-
-import com.thoughtworks.xstream.XStream;
-
 public class ClienteTest {
 
 	private HttpServer server;
@@ -29,18 +25,18 @@ public class ClienteTest {
 		server.stop();
 	}
 
-//	@Test
-//	public void testaQueBuscaUmCarrinhoTrazUmCarrinho() {
-//
-//		Client client = ClientBuilder.newClient();
-//		WebTarget target = client.target("http://localhost:8080");
-//		String conteudo = target.path("/projetos/1").request()
-//				.get(String.class);
-//		System.out.println(conteudo);
-//		Projeto carrinho = (Projeto) new XStream().fromXML(conteudo);
-//		Assert.assertEquals("Minha loja", carrinho.getNome());
-//
-//	}
+	// @Test
+	// public void testaQueBuscaUmCarrinhoTrazUmCarrinho() {
+	//
+	// Client client = ClientBuilder.newClient();
+	// WebTarget target = client.target("http://localhost:8080");
+	// String conteudo = target.path("/projetos/1").request()
+	// .get(String.class);
+	// System.out.println(conteudo);
+	// Projeto carrinho = (Projeto) new XStream().fromXML(conteudo);
+	// Assert.assertEquals("Minha loja", carrinho.getNome());
+	//
+	// }
 
 	@Test
 	public void testaQueAConexaoComOServidorFunciona() {

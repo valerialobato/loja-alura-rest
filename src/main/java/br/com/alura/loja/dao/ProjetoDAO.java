@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 import br.com.alura.loja.modelo.Projeto;
-import br.com.alura.loja.modelo.Produto;
 
 public class ProjetoDAO {
 

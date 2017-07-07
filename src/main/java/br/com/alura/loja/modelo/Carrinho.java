@@ -11,6 +11,7 @@ public class Carrinho {
 
 	private List<Produto> produtos = new ArrayList<Produto>();
 	private String rua;
+	@SuppressWarnings("unused")
 	private String cidade;
 	private long id;
 
@@ -46,6 +47,7 @@ public class Carrinho {
 		return id;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public void remove(long id) {
 		for (Iterator iterator = produtos.iterator(); iterator.hasNext();) {
 			Produto produto = (Produto) iterator.next();
